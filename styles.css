@@ -1,0 +1,171 @@
+/* https://coolors.co/6c783f-303b16-bfb7b0-a29587-846c5b
+*****TEXT COLOR*****
+--desert-sand: #edc4b3;
+*****BACKGROUNDS*****
+--cafe-au-lait: #b2826c;
+--brown-sugar: #9d6b53;
+--coffee-2: #774936;
+--dark-gray: #343434;
+--almost-white: #f7fff7;
+--old-burgundy: #462920;
+*/
+
+/* Global Styles
+-----------------------------------------------*/
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #edc4b3;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+img {
+  width: 300px;
+}
+a {
+  color: #edc4b3;
+}
+h1 {
+  font-size: 60px;
+  line-height: 1;
+  font-weight: lighter;
+}
+h2 {
+  font-size: 40px;
+}
+h1, h2 {
+  font-family: 'Lobster', cursive;
+  margin: 15px 0;
+}
+h3 {
+  font-family: 'Scope One', serif;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+.content-wrap {
+  max-width: 750px;
+  width: 75%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+/* Profile
+-----------------------------------------------*/
+header {
+  background: #774936;
+}
+h1 {
+  font-style: italic;
+}
+
+
+
+
+/* Projects
+-----------------------------------------------*/
+.projects {
+  background: #9D6B53;
+}
+.projects a {
+  color: #462920;
+}
+.projects .btn {
+  color: #774936;
+  background: #edc4b3;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
+}
+.projects .btn:hover {
+  background: rgba(237, 196, 179, .7);
+}
+.project-item {
+  overflow: hidden;
+}
+.project-item h3 {
+  margin-top: 0;
+}
+
+
+/* Work Experience
+-----------------------------------------------*/
+.work-experience {
+  background: #B2826C;
+}
+
+
+
+
+
+/* Education
+-----------------------------------------------*/
+.education {
+  background: #9D6B53;
+  /* background-image: url(../project-images/yellow-image.jpg); */
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 100px;
+  /* color: #462920; */
+}
+.education p {
+  width: 60%;
+}
+
+
+
+
+
+/* Contact Info
+-----------------------------------------------*/
+footer {
+  background: #774936;
+}
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+.contact-list a {
+  padding: 15px;
+  display: inline-block;
+}
+
+/* Responsive
+-----------------------------------------------*/
+@media screen and (min-width:750px){
+  header, footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width:749px) {
+  h1 {
+    font-size:
+  }
+  .contact-list a {
+    padding: 5px;
+  }
+}
